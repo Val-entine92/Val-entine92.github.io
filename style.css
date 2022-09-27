@@ -18,8 +18,11 @@ font-weight:bold;
 font-size: 30pt;
 }
 .h{
-    font-size:60px;
     color:rgb(93, 6, 143);
+    border-radius: 20%;
+    background-color: rgba(196, 8, 180, 0.76);
+    font: bold 40pt 'Courier',Verdana;
+    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -30px 19px;
 }
 
 
