@@ -1,0 +1,110 @@
+ 
+.but{
+    border-radius:20%;
+    background-color:rgba(196, 8, 180, 0.76);
+    color:rgb(93, 6, 143);
+    font:  bold 40pt 'Courier',Verdana ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -30px 19px;
+    
+}
+.img{
+width: 160px;
+height: 160px;
+border-radius:40%;
+}
+#bold {
+color:rgb(126, 17, 228);
+font-weight:bold;
+font-size: 30pt;
+}
+.h{
+    color:rgb(93, 6, 143);
+    border-radius: 20%;
+    background-color: rgba(196, 8, 180, 0.76);
+    font: bold 40pt 'Courier',Verdana;
+    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -30px 19px;
+}
+
+
+.par{
+font-family: 'Times New Roman', Times, serif;
+font-size: large;
+font-weight:bolder;
+color:rgb(76, 9, 139);
+text-shadow:10px 10px;
+}
+option{
+font-size: larger;
+}
+tbody , th  {
+    font-size: x-large;
+    background-image: conic-gradient(rgb(209, 70, 70), rgb(201, 201, 27), rgb(55, 160, 55), rgb(74, 74, 146), rgb(124, 51, 146));
+    color:rgb(15, 231, 247);
+ }
+ .pic{
+    width:100%; 
+ }
+ .main{
+    background-color:rgb(190, 223, 8);
+}
+.button{
+    font-size: larger;
+}
+.butt{
+    font-size: larger;
+    position:relative;
+    font:2rem sans-serif;
+    -webkit-text-stroke:0.3vw #383d52;
+    text-transform:capitalize;
+}
+.butt::before{
+    content:attr(data-text);
+    position:absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    color:#00ffff;
+    -webkit-text-stroke:0vw #383d52;
+    border-right: #00ffff;
+    overflow: hidden;
+    animation:animate 1.1s linear ;
+    -webkit-animation: animate  2s linear infinite;
+}
+@keyframes animate {
+    0%{
+        width:0;
+    }
+    70%{
+        width: 50%;
+    }
+}
+ h1{
+    position:relative;
+    font:5rem sans-serif;
+    -webkit-text-stroke:0.3vw #383d52;
+    text-transform:uppercase;
+}
+h1::before{
+    content:attr(data-text);
+    position:absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    color:#00ffff;
+    -webkit-text-stroke:0vw #383d52;
+    border-right:   #00ffff;
+    overflow:hidden;
+    animation:animate 4s linear infinite;
+    -webkit-animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    0%{
+        width:0%;
+    }
+    70%{
+        width: 100%;
+    }
+
+}
