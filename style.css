@@ -1,9 +1,10 @@
-*{border-radius:1%; font-size: 25px; }
+*{border-radius:1%; border-color:#00ffff; font: 35px lobster ; }
 .but , .head2{
     border-radius:15%;
     background-color:rgb(231, 123, 177);
     color:rgb(15, 214, 204);
-    font:  bold 'Courier',Verdana ;
+    text-align: center;
+    box-sizing: content-box;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -30px 19px; 
 }
 button{ border-radius:15%;
@@ -27,14 +28,13 @@ width: 160px;
 height: 160px;
 border-radius:40%;
 }
-.bold > div{
+.bold {
 color:rgb(15, 214, 204 );
 font-weight:bold;
 }
 
 
 .par{
-font-family: 'Times New Roman', Times, serif;
 font-weight:bolder;
 color:rgb(76, 9, 139);
 }
@@ -47,10 +47,11 @@ color:rgb(76, 9, 139);
 }
 option{
     color:azure;
+    
 }
 
 .tablebody , th  {
-    background-image: conic-gradient(rgb(209, 70, 70), rgb(201, 201, 27), rgb(55, 160, 55), rgb(74, 74, 146), rgb(124, 51, 146));
+    background-image: linear-gradient(rgb(209, 70, 70), rgb(201, 201, 27), rgb(55, 160, 55), rgb(74, 74, 146), rgb(124, 51, 146));
  }
 .pic{
     width:100%; 
@@ -63,19 +64,18 @@ option{
 .data {
     font-size: larger;
     position:relative;
-    font:2rem sans-serif;
-    -webkit-text-stroke:0.3vw #383d52;
+    -webkit-text-stroke:0.2vw #df23df;
     text-transform:capitalize;
 }
 .data:before{
     content:attr(data-text);
     position:absolute;
-    top:0;
-    left:0;
+    top:0%;
+    left:0%;
     width:0%;
     height:100%;
     color:#00ffff;
-    -webkit-text-stroke:0vw #383d52;
+    -webkit-text-stroke:0vw #df23df;
     border-right: #00ffff;
     overflow: hidden;
     animation:animate 1.1s linear infinite ;
@@ -83,17 +83,19 @@ option{
 }
 @keyframes animate {
     0%{
-        width:0;
+        width:0%;
+    }
+    30%{
+        width:30%;
     }
     70%{
-        width: 30%;
+        width: 70%;
     }
 }
 h1{
-    position:relative;
-    font:5rem sans-serif;
-    -webkit-text-stroke:0.3vw #383d52;
-    text-transform:uppercase;
+    position:absolute;
+    -webkit-text-stroke:0.3vw #df23df;
+    text-transform:lowecase;
 }
 h1:before{
     content:attr(data-text);
@@ -103,8 +105,8 @@ h1:before{
     width:0%;
     height:100%;
     color:#00ffff;
-    -webkit-text-stroke:0vw #383d52;
-    border-right:   #00ffff;
+    -webkit-text-stroke:0vw #df23df;
+    border-right: #00ffff;
     overflow:hidden;
     animation:animate 3s linear infinite;
     -webkit-animation: animate 3s linear infinite;
@@ -119,7 +121,7 @@ h1:before{
 
 }
 .tablehead{
-color:rgb(20, 193, 216);font-size:xx-large;}
+color:rgb(18, 93, 206)}
 [lang]{
 color:rgb(216, 18, 223);}
 [lang="fr"]{
@@ -127,10 +129,10 @@ color:rgb(216, 18, 223);}
 
 tr:nth-child(odd){
     background-image:linear-gradient(pink,rgb(221, 13, 117) ,rgba(131, 8, 121, 0.651),rgba(196, 8, 180, 0.76));
-    color:rgb(16, 223, 238);
+    color:rgb(39, 248, 11);
 }
 tr:nth-child(even){
-    color:rgb(45, 241, 6);
+    color:rgb(20, 155, 233);
 }
 
 .tfoot {
