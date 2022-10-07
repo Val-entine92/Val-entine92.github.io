@@ -56,8 +56,7 @@ option{
  }
 .main{
 background-color:rgb(190, 223, 8); 
-background-size:contain;  
-
+background-size:contain; 
 } 
 
 .main2[main="pink"] {background-image: linear-gradient(pink,rgb(221, 13, 117) ,rgba(61, 174, 182, 0.651),rgba(199, 68, 188, 0.76));}
