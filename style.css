@@ -1,10 +1,10 @@
-*{border-radius:1%; border-color:#00ffff; font: 28pt lobster ; }
+* {border-radius:1%; border-color:#00ffff; font: 28pt lobster ; box-sizing: content-box; }
 .but , .head2{
     border-radius:15%;
     background-color:rgb(231, 123, 177);
     color:rgb(15, 214, 204);
     text-align: center;
-    box-sizing: content-box;
+   
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -30px 19px; 
 }
 button{ border-radius:15%;
@@ -52,7 +52,6 @@ option{
 }
 
 .tablebody , th  {
-    
     background-image: conic-gradient(rgb(219, 34, 219), rgb(131, 27, 201), rgb(160, 55, 120), rgb(228, 61, 178), rgb(221, 21, 81));
  }
 .pic{
@@ -61,7 +60,7 @@ option{
  .main{
     box-sizing: content-box;
     max-width:fit-content;
-     background-color:rgb(190, 223, 8); 
+    background-color:rgb(190, 223, 8); 
      
     } 
     nav{ 
@@ -70,7 +69,6 @@ option{
     position:static; 
     display:inline-table;     
     box-shadow: 1.6px 10px 25px 0 rgb(228, 4, 236); 
-    border-width:5px; 
     margin: 20px;
     padding: 70px;
     transform:skew(10deg);
@@ -146,6 +144,7 @@ h1:before{
 
 }
 .tablehead{
+    border: #df23df;
 color:rgb(22, 177, 55)}
 [lang]{
 color:rgb(209, 223, 18);}
@@ -155,7 +154,7 @@ table{
 max-height: 50%;
 display: block;
 margin: auto;
-padding:20px;
+padding:0px;
 white-space:nowrap;
 }
 
