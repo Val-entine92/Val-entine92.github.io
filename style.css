@@ -59,17 +59,21 @@ option{
     width:100%; 
  }
  .main{
+    box-sizing: content-box;
+    max-width:fit-content;
      background-color:rgb(190, 223, 8); 
      
     } 
     nav{ 
-    box-sizing: content-box;
-    border-radius: 10%;
+    box-sizing: border-box;
+    border-radius: 17%;
     position:static; 
     display:inline-table;     
-    box-shadow: 1px 10px 25px 0 rgb(181, 25, 212);  
+    box-shadow: 1.6px 10px 25px 0 rgb(228, 4, 236); 
+    border-width:5px; 
     margin: 20px;
     padding: 70px;
+    transform:skew(10deg);
     }    
     li {  
     left: 10%;
@@ -86,7 +90,7 @@ option{
     -webkit-text-stroke:0.2vw #df23df;
     text-transform:capitalize;
     overflow: hidden;
-    text-overflow: clip;
+    
 }
 .data:before{
     content:attr(data-text);
@@ -110,7 +114,7 @@ option{
         width:30%;
     }
     70%{
-        width: 70%;
+        width: 100%;
     }
 }
 h1{
@@ -149,9 +153,9 @@ color:rgb(209, 223, 18);}
     color:rgb(7, 39, 223);}
 table{
 max-height: 50%;
-
 display: block;
-margin:0 auto;
+margin: auto;
+padding:20px;
 white-space:nowrap;
 }
 
@@ -174,7 +178,6 @@ tr{
 tr:nth-child(even){
     color:rgb(20, 237, 245);
 }
-
 
 
  
