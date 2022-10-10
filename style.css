@@ -1,4 +1,4 @@
-* {border-radius:1%; border-color:#00ffff;   font: 25pt lobster ; box-sizing: content-box; }
+* {border-radius:4%; border-color:#00ffff;   font: 25pt lobster ; box-sizing: content-box; }
 .but , .head2{
     border-radius:15%;
     background-color:rgb(231, 123, 177);
@@ -176,11 +176,31 @@ tr:nth-child(even){
 
 div {
 color: rgb(12, 235, 223);
-  width: 160px;
+  width: 299px;
   height: 100px;
   margin: 20px;
   padding: 20px;
   border: 10px solid rgb(0, 255, 255);
   background: rgb(197, 10, 214);
   box-sizing: content-box;}
+
+  .div1{
+    position:relative;
+    z-index:6 ;
+    margin:1em;
+    left: 10mm;
+    height:3cm;
+  }
+.div2{
+position:relative;
+top: 1px;
+margin-top:1rem;
+z-index:4;
+}
+.div3{
+    position:relative;
+    top: 3vh;
+    z-index:5;
+    left: 23mm;
+}
  
