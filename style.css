@@ -116,7 +116,7 @@ background-image: conic-gradient(rgb(219, 34, 219), rgb(131, 27, 201), rgb(160, 
 h1{
     position:relative;
     -webkit-text-stroke:0.1vw #23badf;
-    text-transform:lowercase;
+    text-transform:uppercase;
 }
 h1:before{
     content:attr(data-text);
