@@ -1,8 +1,6 @@
 * {  border-radius:0%; border-color:#00ffff;   font: 25pt lobster ; }
-@media screen and (max-width:600px){
-    container{flex-direction:column; align-items: center ; justify-content:space-between;}
 
-}
+
 .but , .head2{
 overflow: hidden;
     border-radius:15%;
@@ -11,6 +9,7 @@ overflow: hidden;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -30px 19px; 
 }
+
 
 button{ border-radius:15%;
     background-color:rgba(196, 8, 180, 0.76);
@@ -27,9 +26,10 @@ button:active{
     cursor:wait;
 }
 
+
 .img{
-width: 160px;
-height: 160px;
+width: 16vw;
+height: 16vh;
 border-radius:40%;
 }
 .bold {
@@ -57,39 +57,42 @@ option{
 box-sizing: border-box;
 width:100vw;
 height:100%;
-border: solid #68cd5b 10px;
+border: solid #68cd5b 1vw ;
 padding:0;
 background-image: conic-gradient(rgb(219, 34, 219), rgb(131, 27, 201), rgb(160, 55, 120), rgb(228, 61, 178), rgb(221, 21, 81));
  }
+ 
 .pic{
     width:100%; 
  }
  .main{
-    background-color:rgb(33, 223, 8); 
+    background-color:rgb(8, 223, 194); 
     } 
 
-    container{
+    .container1{
     border-radius:10%;
     display:flex;   
-    box-shadow: 1.6px 10px 25px 0 rgb(228, 4, 236); 
+    box-shadow: 1.6px 10px 25px 0 rgb(4, 19, 236); 
     margin:12px;
     padding: 10px; 
     transform:rotate(0deg) skew(6deg); 
     justify-content:space-evenly;
-    
     }
+
+    
+
+    
    
    
 .main2[main="pink"] {background-image: linear-gradient(pink,rgb(221, 13, 117) ,rgba(61, 174, 182, 0.651),rgba(199, 68, 188, 0.76));}
 
 .data {
-
     position:relative;
-    width:100%;
-    min-width:50%;
-    -webkit-text-stroke:0.2vw #df23df;
-    text-transform:capitalize;
+    width:11;
+    -webkit-text-stroke:0.2vw #23badf;
+    text-transform:full-width;
     overflow:hidden;
+    align-content: flex-start;
     
 }
 .data:before{
@@ -99,12 +102,13 @@ background-image: conic-gradient(rgb(219, 34, 219), rgb(131, 27, 201), rgb(160, 
     left:0%;
     width:0%;
     height:100%;
-    color:#00ffff;
-    -webkit-text-stroke:0.1vw #df23df;
+    color: #0059ff;
+    -webkit-text-stroke:0.1vw;
     border-right: #00ffff;
     overflow:hidden;
-    animation:animate 1.1s infinite ;
-    -webkit-animation: animate  3s infinite;
+    animation:animate 1.1s linear  ;
+    -webkit-animation: animate  3s linear infinite;
+    
 }
 @keyframes animate {
     0%{
@@ -114,13 +118,14 @@ background-image: conic-gradient(rgb(219, 34, 219), rgb(131, 27, 201), rgb(160, 
         width:30%;
     }
     70%{
-        width: 100%;
+        width: 70%;
     }
+    100%{width:100%}
 }
 h1{
     position:relative;
-    -webkit-text-stroke:0.3vw #df23df;
-    text-transform:lowecase;
+    -webkit-text-stroke:0.3vw #23badf;
+    text-transform:lowercase;
 }
 h1:before{
     content:attr(data-text);
@@ -129,8 +134,8 @@ h1:before{
     left:0;
     width:0%;
     height:100%;
-    color:#00ffff;
-    -webkit-text-stroke:0vw #df23df;
+    color:#0059ff;
+    -webkit-text-stroke:0vw ;
     border-right: #00ffff;
     overflow:clip;
     animation:animate2 3s linear infinite;
@@ -142,33 +147,41 @@ h1:before{
     }
     60%{
         width: 100%;
-    }
-
+    } 
 }
+.lid{
+    max-width:100vw;
+    text-align-last: center;
+    background-color: #00ffff;
+    
+} 
+
 .tablehead{
 color:rgb(22, 177, 55)}
 [lang]{
 color:rgb(209, 223, 18);}
 [lang="fr"]{
     color:rgb(7, 39, 223);}
+
+
 table{
 width: auto;
 border-width:.2rem;
 max-height: 50%;
 display: block;
 margin: auto;
-padding:10px;
+padding:0;
 white-space:nowrap;
 }
 
 .tab2{
-    min-width:0;
-    max-height:200px;
+    max-height:20vmax;
     overflow-y: scroll;
 }
 .tab3{
-    max-width:400px;
-    max-height:200px;
+    border: #00ffff solid 6px;
+    max-width:40vmax;
+    max-height:20vmax;
     overflow:scroll;
 }
 
@@ -179,7 +192,7 @@ tr{
 }
 tr:nth-child(even){
     color:rgb(20, 237, 245);
-}
+}  
 
 div {
     display: flex;
@@ -193,25 +206,19 @@ color: rgb(12, 235, 223);
   box-sizing: content-box;
 height:fit-content;}
   
+.grid{
+    width:100vw;
+    display:grid;
+    
+ }
+@media screen and (max-width:60%){
+    container{flex-direction:column; align-items: center ; justify-content:space-between;}
+    .grid{
+    width:100vw;
+    display:grid;
+    grid-template-rows: 3fr 1fr;
+    }}
+    
 
-  .div1{
-   
-    position:relative;
-    z-index:3;
-    margin:1em;
-    left: 10mm;
-    height:3cm;
-  }
-.div2{
-position:relative;
-top: 1px;
-margin-top:1rem;
-z-index:4;
-}
-.div3{
-    position:relative;
-    top: 3vh;
-    z-index:5;
-    left: 23mm;
-}
+    
  
