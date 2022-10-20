@@ -88,11 +88,10 @@ background-image: conic-gradient(rgb(219, 34, 219), rgb(131, 27, 201), rgb(160, 
     width:11;
     -webkit-text-stroke:0.2vw #23badf;
     text-transform:full-width;
-    overflow:hidden;
     align-content: flex-start;
     
 }
-.data:before{
+.data::before{
     content:attr(data-text);
     position:absolute;
     top:0%;
@@ -103,42 +102,51 @@ background-image: conic-gradient(rgb(219, 34, 219), rgb(131, 27, 201), rgb(160, 
     -webkit-text-stroke:0.01vw ;
     border-right: #00ffff;
     overflow:hidden;
-    animation:animate 1.1s linear  ;
-    -webkit-animation: animate  1.5s linear infinite;
+    animation:animate 2.1s linear infinite ;
+    
     
 }
 @keyframes animate {
     0%{
         width:0%;
+        color: #193fe6;;
     }
-    100%{width:100%}
+    100%{width:100%;
+    color:#ff00d4;}
 }
 h1{
+   
     position:relative;
     -webkit-text-stroke:0.1vw #23badf;
     text-transform:uppercase;
 }
 h1:before{
+   visibility:visible;
+   opacity:1;
     content:attr(data-text);
     position:absolute;
     top:0;
     left:0;
     width:0%;
     height:100%;
-    color:#0059ff;
+    animation-fill-mode:both;
     -webkit-text-stroke:0.01vw ;
-    border-right: #00ffff;
-    overflow:clip;
-    animation:animate2 1.1s linear infinite;
-    -webkit-animation: animate2 1.5s linear infinite;
+    border-collapse: #00ffff;
+    overflow:hidden;
+    animation:animate2 2.1s linear infinite;
+    
 }
 @keyframes animate2{
     0%{
         width:0%;
+        color: #ff00d4;
     }
    
-    100%{width: 100%;}
+    100%{width: 100%;
+    color: #193fe6;}    
 }
+
+
 .lid{
     max-width:100vw;
     text-align-last: center;
@@ -149,8 +157,7 @@ h1:before{
 
 .tablehead{
 color:rgb(22, 177, 55)}
-[lang]{
-color:rgb(209, 223, 18);}
+
 [lang="fr"]{
     color:rgb(7, 39, 223);}
 
@@ -210,6 +217,11 @@ height:fit-content;}
     .img{
         border-radius: 50%;border-color: #00ffff;
     }
+    h1{width:100vw;visibility:visible;
+   opacity:0.3;}
+   .data::before {visibility:visible;
+   opacity:0;}
+
 }
     
 
