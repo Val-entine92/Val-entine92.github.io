@@ -2,16 +2,15 @@
 
 
 .but , .head2{
-overflow: hidden;
-    border-radius:15%;
     background-color:rgb(231, 123, 177);
     color:rgb(15, 214, 204);
     text-align: center;
+    padding: 18px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -30px 19px; 
 }
 
 
-button{ border-radius:15%;
+button{ border-radius:1%;
     background-color:rgba(196, 8, 180, 0.76);
     color:rgb(15, 214, 204);
     
@@ -28,8 +27,8 @@ button:active{
 
 
 .img{
-width: 16vw;
-height: 16vh;
+width: 30vw;
+height: 25vh;
 border-radius:40%;
 }
 .bold {
@@ -57,7 +56,7 @@ option{
 box-sizing: border-box;
 width:100vw;
 height:100%;
-border: solid #68cd5b 1vw ;
+border: solid #68cd5b 1% ;
 padding:0;
 background-image: conic-gradient(rgb(219, 34, 219), rgb(131, 27, 201), rgb(160, 55, 120), rgb(228, 61, 178), rgb(221, 21, 81));
  }
@@ -65,23 +64,21 @@ background-image: conic-gradient(rgb(219, 34, 219), rgb(131, 27, 201), rgb(160, 
 .pic{
     width:100%; 
  }
+
  .main{
+    max-width:100vmax;
     background-color:rgb(8, 223, 194); 
     } 
 
     .container1{
+    align-self:center;
     border-radius:10%;
     display:flex;   
     box-shadow: 1.6px 10px 25px 0 rgb(4, 19, 236); 
-    margin:12px;
-    padding: 10px; 
     transform:rotate(0deg) skew(6deg); 
     justify-content:space-evenly;
+    
     }
-
-    
-
-    
    
    
 .main2[main="pink"] {background-image: linear-gradient(pink,rgb(221, 13, 117) ,rgba(61, 174, 182, 0.651),rgba(199, 68, 188, 0.76));}
@@ -103,28 +100,22 @@ background-image: conic-gradient(rgb(219, 34, 219), rgb(131, 27, 201), rgb(160, 
     width:0%;
     height:100%;
     color: #0059ff;
-    -webkit-text-stroke:0.1vw;
+    -webkit-text-stroke:0.01vw ;
     border-right: #00ffff;
     overflow:hidden;
     animation:animate 1.1s linear  ;
-    -webkit-animation: animate  3s linear infinite;
+    -webkit-animation: animate  1.5s linear infinite;
     
 }
 @keyframes animate {
     0%{
         width:0%;
     }
-    30%{
-        width:30%;
-    }
-    70%{
-        width: 70%;
-    }
     100%{width:100%}
 }
 h1{
     position:relative;
-    -webkit-text-stroke:0.3vw #23badf;
+    -webkit-text-stroke:0.1vw #23badf;
     text-transform:lowercase;
 }
 h1:before{
@@ -135,24 +126,24 @@ h1:before{
     width:0%;
     height:100%;
     color:#0059ff;
-    -webkit-text-stroke:0vw ;
+    -webkit-text-stroke:0.01vw ;
     border-right: #00ffff;
     overflow:clip;
-    animation:animate2 3s linear infinite;
-    -webkit-animation: animate2 3s linear infinite;
+    animation:animate2 1.1s linear infinite;
+    -webkit-animation: animate2 1.5s linear infinite;
 }
 @keyframes animate2{
     0%{
         width:0%;
     }
-    60%{
-        width: 100%;
-    } 
+   
+    100%{width: 100%;}
 }
 .lid{
     max-width:100vw;
     text-align-last: center;
     background-color: #00ffff;
+    color: #0059ff;
     
 } 
 
@@ -195,7 +186,7 @@ tr:nth-child(even){
 }  
 
 div {
-    display: flex;
+display: flex;
 color: rgb(12, 235, 223);
   width: 299px;
   height: 100px;
@@ -206,18 +197,20 @@ color: rgb(12, 235, 223);
   box-sizing: content-box;
 height:fit-content;}
   
-.grid{
-    width:100vw;
-    display:grid;
-    
- }
-@media screen and (max-width:60%){
-    container{flex-direction:column; align-items: center ; justify-content:space-between;}
-    .grid{
-    width:100vw;
-    display:grid;
-    grid-template-rows: 3fr 1fr;
-    }}
+
+ .grid > li {
+    color: #0059ff;
+    margin:10px;
+    padding:10px;
+}
+
+
+@media only screen and (max-width:600px){
+    container{flex-direction:row-reverse; align-items: center ; gap:10px; width: 100%;}
+    .img{
+        border-radius: 50%;border-color: #00ffff;
+    }
+}
     
 
     
