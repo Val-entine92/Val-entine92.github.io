@@ -214,9 +214,7 @@ height:fit-content;}
 
 @media only screen and (max-width:600px){
     container{flex-direction:row-reverse; align-items: center ; gap:10px; width: 100%;}
-    .img{
-        border-radius: 50%;border-color: #00ffff;
-    }
+    .img{border-radius:50%;}
     h1{width:100vw;visibility:visible;
    opacity:0.3;}
    .data::before {visibility:visible;
