@@ -3,7 +3,7 @@ function hello(){
         alert('Hello')}
 function openwindow(){
             var newwindow=window.open(",", 'width=400, height=400');
-            newwindow.document.write("<button onclick='window.close()'>Back</button>")}
+            newwindow.document.write("<button onclick='window.close()'>You clicked </button>")}
                
 
 document.body.innerHTML+='<b></b>'  
