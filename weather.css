@@ -50,12 +50,13 @@ margin-right: 2em;
 .container header{
   display: flex;
   font-size: 25px;
-  color:#cddeeb;
+  color:#5DBBFF;
   justify-content: center;
   border-bottom: 3px solid rgb(9, 37, 78);
 }
 .container.active header {
   display: flexbox;
+  color: #f7f8f8;
   
 }
 .back {
