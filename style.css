@@ -212,11 +212,11 @@ height:fit-content;}
 }
 
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:1200px){
     container{flex-direction:row-reverse; align-items: center ; gap:10px; width: 100%;}
     .img{border-radius:50%;}
     h1{width:100vw;visibility:visible;
-   opacity:0.3;}
+   opacity:2;}
    .data::before {visibility:hidden;
    opacity:0;}
 
