@@ -50,7 +50,7 @@ margin-right: 2em;
 .container header{
   display: flex;
   font-size: 25px;
-  color:#aacde6;
+  color:#cddeeb;
   justify-content: center;
   border-bottom: 3px solid rgb(9, 37, 78);
 }
@@ -151,6 +151,7 @@ background-color:rgba(1, 1, 5, 0.26);
   flex-direction: column;
 }
 .container.active .weather-section{
+  color: #f7f8f8;
   transition:3s ease-in-out;
   display: flex;
   border-radius: 25px;
@@ -226,23 +227,3 @@ justify-content: center;
 margin-left: 0px auto;
 display: inline-flexbox;
 }
- @media screen and (max-width: 600px) {
-    html {
-     font-size: 12px;
-    }
-  }
-  
-  @media screen and (max-width: 800px) {
-    .container {
-      position: relative;
-      width: 100%;
-      
-    }
-  }
-  
-  @media screen and (max-width: 400px) {
-    html {
-     font-size: 18px;
-     color: #1fa8e7;
-    }
-  }
