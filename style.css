@@ -12,7 +12,7 @@
   justify-content: center;
   min-height:100vh;
   color: rgb(4, 191, 248);
-  background-image:url(https://th.bing.com/th/id/R.0f907a39bfc022c4d062d5d8853479c6?rik=qY4ZCiBvKc0uyA&pid=ImgRaw&r=0);
+  background-image:url(https://media.istockphoto.com/photos/sun-beams-through-clouds-picture-id471892237?k=6&m=471892237&s=612x612&w=0&h=x1DU0nR3-JV3lg1dnyrwzpkoeozFV5Kk5yvsBziT9L0=);
   transition:3s ease-in-out;
   background-repeat:no-repeat;
   background-size:cover;
@@ -24,14 +24,13 @@ background: rgb(153, 98, 241);
 }
 .city {
 position: fixed;
-bottom: 0 ;
+bottom: 2% ;
 width:100%; 
 display:flexbox;
 text-align:  center;
 color:#5DBBFF;
-margin-bottom: 0em;
 font-size: 1em;
-margin-right: 2em;
+margin-left:-1em;
 }
 .container{
   padding: 3em 2em;
@@ -129,7 +128,7 @@ background-color:rgba(1, 1, 5, 0.26);
   content: "OR";
   color:#abd4f1;
   font: 30px bolder;
-  padding: 10px 0 ;
+  padding: 20px 0 ;
  
 }
 .input-section button{

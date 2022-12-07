@@ -36,9 +36,9 @@ var currentDate  = currentTimeDate.getDate();
 var currentMonth = month[currentTimeDate.getMonth()];
 var CurrentYear = currentTimeDate.getFullYear();
 var fullDate = ` ${currentDay} ${currentDate} ${currentMonth}, ${CurrentYear}`;
-$(".time").innerHTML=currentTimeDate.toLocaleTimeString();
-$(".time").innerHTML+=fullDate;
+$(".time").innerHTML =`[${fullDate} ] `  + currentTimeDate.toLocaleTimeString();
 });
+
 let api_url;
 
 window.addEventListener("load",()=>{//upon loading , function will run to provide current temperature of base city (Caldwell)
