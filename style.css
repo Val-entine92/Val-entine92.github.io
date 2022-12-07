@@ -16,7 +16,7 @@
   transition:3s ease-in-out;
   background-repeat:repeat;
   background-size:cover;
-  background-color:#9dc2db;
+  background-color:#ec8c33;
  
 }
 ::selection{
@@ -31,6 +31,7 @@ text-align:  center;
 color:#5DBBFF;
 font-size: 1em;
 margin-left:-1em;
+
 }
 .container{
   padding: 3em 2em;
@@ -207,9 +208,7 @@ background-color:rgba(1, 1, 5, 0.26);
   margin: 7px ;
   text-align:center;
 }
-.degree{
-  margin:3px;
-}
+
 .column-details p{
 font-size: 41px;
 text-align:center;
@@ -219,4 +218,37 @@ justify-content: center;
 .feels  {
 margin-left: 0px auto;
 display: inline-flexbox;
+}
+
+@media screen and (max-width:830px){
+
+}
+
+@media only screen and (max-width:450px){
+.bg-Img{
+display:flex;
+position:relative;
+align-items: center;
+justify-content: center;
+}
+.container{
+position: relative;
+display: flexbox;
+width: 450px;
+height: 100%;
+color: #8ec9f3;
+background-color:rgba(8, 2, 59, 0.226);
+border-radius: 10px;
+box-shadow: 27px 20px 20px rgba(12, 11, 11, 0.05);
+align-content: center;
+} 
+.container.active .weather-section{
+  justify-content: center;
+  color: #f7f8f8;
+  transition:3s ease-in-out;
+  display: flex;
+  border-radius: 25px;
+  
+}
+
 }
