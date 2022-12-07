@@ -14,7 +14,7 @@
   color: rgb(4, 191, 248);
   background-image:url(https://media.istockphoto.com/photos/sun-beams-through-clouds-picture-id471892237?k=6&m=471892237&s=612x612&w=0&h=x1DU0nR3-JV3lg1dnyrwzpkoeozFV5Kk5yvsBziT9L0=);
   transition:3s ease-in-out;
-  background-repeat:no-repeat;
+  background-repeat:repeat;
   background-size:cover;
   background-color:#9dc2db;
  
@@ -158,11 +158,6 @@ background-color:rgba(1, 1, 5, 0.26);
 .container.active .city{
   display: none;
 }
-img{
-  border-radius:35%;
-  max-width: 70px;
-
-}
 .weather-section{
   display: none;
   width:100%;
@@ -171,10 +166,11 @@ img{
   display: flex;
   font-size: 66px;
 }
-.weather-section .temperature .number{
+.number{
   margin:26px;
 }
 .weather-section .weather{
+  text-transform: capitalize;
   font-size: 25px;
   text-align: center;
   margin: -5px 10px 15px;
@@ -191,7 +187,7 @@ img{
  text-align: center;
  margin:0 auto;
 }
-.weather-section .bottom-details{
+.bottom-details{
   display: flexbox;
   justify-content: space-between;
   border-top: 3px solid rgb(9, 37, 78);
@@ -204,17 +200,15 @@ img{
 }
 
 .humidity {
-  display: flexbos;
-  justify-content: space-between;
-  margin-top:1px;
+  display: flexbox;
+  margin-top:10px;
 }
 .column-details {
   margin: 7px ;
   text-align:center;
 }
 .degree{
-  margin:1px;
-  width:10px;
+  margin:3px;
 }
 .column-details p{
 font-size: 41px;

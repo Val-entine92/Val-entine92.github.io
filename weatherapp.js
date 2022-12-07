@@ -18,7 +18,7 @@ var weekday = new Array(7);
     weekday[5] = "Fri";
     weekday[6] = "Sat";
     weekday[7] = "Sun";
-var month = new Array(12);
+var month = new Array();
     month[1] = "Jan";
     month[2] = "Feb";
     month[3] = "Mar";
@@ -31,6 +31,7 @@ var month = new Array(12);
     month[10] = "Oct";
     month[11] = "Nov";
     month[12] = "Dec";
+    
 var currentDay = weekday[currentTimeDate.getDay()];
 var currentDate  = currentTimeDate.getDate();
 var currentMonth = month[currentTimeDate.getMonth()];
