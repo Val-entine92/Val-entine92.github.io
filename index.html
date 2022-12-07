@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="jpg" sizes="123x180" href="https://th.bing.com/th/id/OIP.yaKZQvr97khaArOR1oCd3QHaHa?w=203&h=203&c=7&r=0&o=5&pid=1.7">
+    <title>Weather App</title>
+</head>
+<body class="bg-Img">
+    <div class="container">
+      <div  class="city" >
+        <span class="temperature">__</span>
+        <span class="degree">&#176;</span>F
+        <h1>Calwell, NJ</h1>
+        <h1 class="time">_</h1>
+      </div>
+      <button class="back">Back</button>
+      <header>Weather App</header>
+        <section class="input-section">
+          <h1 class="info-text"></h1>
+          <div>
+            <input type="text" placeholder="Enter location name here" required>
+            <div class="separator"></div>
+            <button onclick="getLocation()">Click to get location</button>
+          </div>
+        </section>
+        <section class="weather-section">
+          <div class="details">
+            <div class="temperature">
+              <span class="number">__</span>
+              <span class="degree">&#176;</span>F
+            </div>
+          </div>
+          <div class="weather"></div>
+            <div class="location">
+              <i><span>_,_</span></i>
+            </div>
+          <div class="bottom-details">
+            <div class="column-feels">
+              <div class="details">
+              </div>
+              <div class="column-details">
+                <p>What it feels like</p>
+                <span class="feels">__</span>
+                <span class="degree">&#176;</span>F
+                <p>Humidity</p>
+                  <div class="humidity">
+                      <span>__</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+  <script src="weatherapp.js"></script>
+</body>
+</html>
+
