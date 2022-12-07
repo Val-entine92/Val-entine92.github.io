@@ -138,7 +138,6 @@ function weatherDetails(wInfo){//putting thenobtained info into the HTML
         infoText.innerHTML = `${inputField.value} isn't a valid city name`;
     }
 }
-
 backButton.addEventListener("click",()=>{
         container.classList.remove("active" );
         infoText.classList.remove("error");
