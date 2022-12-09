@@ -79,9 +79,10 @@ border-style: inherit;
   display: none;
 }
 .input-section .info-text{
-  display:none;
+  display:flex;
+  background-color: #0a010c;
   justify-content:center;
-  border-radius: 8px;
+  border-radius: 9px;
 }
 .input-section .info-text.error{
   display:flexbox;
@@ -282,7 +283,7 @@ bottom: 0%;
 width:100%; 
 display:flexbox;
 text-align: center;
-color:rgb(231, 103, 28);
+color:#da7a21;
 justify-content:center;
 font-size: 15px;
 }
