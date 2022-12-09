@@ -76,10 +76,10 @@ border-style: inherit;
   margin:0px 25px 25px 25px;
 }
 .container.active .input-section{
-  display:none;
+  display: none;
 }
 .input-section .info-text{
-  display:flex;
+  display:none;
   justify-content:center;
   border-radius: 8px;
 }
@@ -210,15 +210,15 @@ color:#5DBBFF;
 font-size: 41px;
 text-align:center;
 justify-content: center;
-
 }
+
 .feels  {
 margin-left: 0px auto;
 display: inline-flexbox;
 }
 
 @media screen and (max-width:870px){
-  .bg-Img{
+.bg-Img{
 display:flex;
 position:relative;
 align-items: center;
@@ -237,7 +237,7 @@ font-size: 20px;
 .container{
 position: relative;
 display: flexbox;
-width: 600px;
+width:inherit;
 height: 100%;
 color: #8ec9f3;
 background-color:rgba(8, 2, 59, 0.226);
@@ -251,10 +251,9 @@ align-content: center;
   transition:3s ease-in-out;
   display: flex;
 }
-
 }
 
-@media only screen and (max-width:460px){
+@media only screen and (max-width:490px){
 *{
 margin: 0px 0px;
 box-sizing: border-box;
@@ -275,7 +274,7 @@ justify-content: center;
   content: "or";
   color:#abd4f1;
   font: 20px bolder;
-  padding: 20px 0 ;
+  padding: 20px ;
 }
 .city {
 position: fixed;
@@ -283,14 +282,14 @@ bottom: 0%;
 width:100%; 
 display:flexbox;
 text-align: center;
-color:black;
+color:rgb(231, 103, 28);
 justify-content:center;
-font-size: 10px;
+font-size: 15px;
 }
 .container{
 position: relative;
 display: flexbox;
-width: 420px;
+width: 400px;
 height: 100%;
 color: #8ec9f3;
 background-color:rgba(8, 2, 59, 0.226);
@@ -304,7 +303,7 @@ align-content: center;
   transition:3s ease-in-out;
   display: flex;
   border-radius: 25px;
-  
 }
+
 
 }
