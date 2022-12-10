@@ -218,7 +218,7 @@ display: inline-flexbox;
 .footinfo{
 display:none;
 }
-.active.footinfo
+.container.active .footinfo
 position:absolute;
 left: 0%;
 bottom: 0%;
