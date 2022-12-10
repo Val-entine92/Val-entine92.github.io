@@ -215,7 +215,20 @@ justify-content: center;
 margin-left: 0px auto;
 display: inline-flexbox;
 }
-
+.footinfo{
+display:none;
+}
+.container.active .footinfo{
+position:absolute;
+left: 0%;
+bottom: 0%;
+width:100%; 
+display:flexbox;
+text-align: center;
+color:#ec8c33;
+justify-content:center;
+font:20px caption;
+}
 @media screen and (max-width:870px){
 .bg-Img{
 display:flex;
