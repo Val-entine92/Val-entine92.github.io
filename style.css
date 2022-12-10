@@ -28,7 +28,7 @@ bottom: 2% ;
 width:100%; 
 display:flexbox;
 text-align:  center;
-color:#5DBBFF;
+color:#b6d3e7;
 font-size: 1em;
 margin-left:-1em;
 
@@ -49,13 +49,13 @@ margin-left:-1em;
 .container header{
   display: flex;
   font-size: 36px;
-  color:#2494e4;
+  color:#5DBBFF;
   justify-content: center;
   border-bottom: 3px solid rgb(9, 37, 78);
 }
 .container.active header {
   display: flexbox;
-  color: #f7f8f8;
+  color:#a6cde4;
   
 }
 .back {
@@ -147,7 +147,7 @@ color:#5DBBFF;
   flex-direction: column;
 }
 .container.active .weather-section{
-  color: #f7f8f8;
+  color:#8ec9f3;
   transition:3s ease-in-out;
   display: flex;
   border-radius: 25px;
@@ -189,26 +189,15 @@ color:#5DBBFF;
   justify-content: space-between;
   border-top: 3px solid rgb(9, 37, 78);
 }
-.column-feels{
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
 .humidity {
   display: flexbox;
   margin-top:10px;
 }
 .column-details {
   margin: 7px ;
+  font-size: 41px;
   text-align:center;
-}
-
-.column-details p{
-font-size: 41px;
-text-align:center;
-justify-content: center;
+  justify-content: center;
 }
 
 .feels  {
@@ -216,7 +205,15 @@ margin-left: 0px auto;
 display: inline-flexbox;
 }
 .footinfo{
-display:none;
+display:flex;
+position:fixed;
+left: 0%;
+bottom: 0%;
+width:100%; 
+text-align: center;
+color:#2494e4;
+justify-content:center;
+font:20px caption;
 }
 
 @media screen and (max-width:870px){
@@ -228,14 +225,14 @@ justify-content: center;
 }
 .city {
 position:absolute;
+font-size:24px;
 left: 0%;
 bottom: 0%;
 width:100%; 
 display:flexbox;
 text-align: center;
-color:#ec8c33;
+color:#a6cde4;
 justify-content:center;
-font:20px caption;
  }
 .container{
 position: relative;
@@ -249,11 +246,23 @@ box-shadow: 27px 20px 20px rgba(12, 11, 11, 0.05);
 align-content: center;
 } 
 .container.active .weather-section{
-  justify-content: center;
-  color: #f7f8f8;
-  transition:3s ease-in-out;
-  display: flex;
+justify-content: center;
+color: #b2dbf3;
+transition:3s ease-in-out;
+display: flex;
 }
+.footinfo{
+display:flex;
+position:absolute;
+left: 0%;
+bottom: 0%;
+width:100%; 
+text-align: center;
+color:#2494e4;
+justify-content:center;
+font:20px caption;
+}
+
 }
 
 @media only screen and (max-width:490px){
@@ -285,9 +294,9 @@ bottom: 0%;
 width:100%; 
 display:flexbox;
 text-align: center;
-color:#da7a21;
+color:#a6cde4;
 justify-content:center;
-font-size: 15px;
+font-size: 17px;
 }
 .container{
 position: relative;
@@ -302,11 +311,13 @@ align-content: center;
 } 
 .container.active .weather-section{
   justify-content: center;
-  color: #f7f8f8;
+  color: #a6cde4;
   transition:3s ease-in-out;
   display: flex;
   border-radius: 25px;
 }
-
+.footinfo{
+display:none;
+}
 
 }
