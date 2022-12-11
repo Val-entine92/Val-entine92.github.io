@@ -36,7 +36,7 @@ let currentDay = weekday[currentTimeDate.getDay()];
 let currentDate  = currentTimeDate.getDate();
 let currentMonth = month[currentTimeDate.getMonth()];
 let currentYear = currentTimeDate.getFullYear();
-let fullDate = ` ${currentDay} ${currentDate} ${currentMonth}, ${CurrentYear}`;
+let fullDate = ` ${currentDay} + ${currentDate} + ${currentMonth}, ${CurrentYear}`;
 $(".time").innerHTML =`[${fullDate} ] `  + currentTimeDate.toLocaleTimeString();
 });
 
