@@ -80,12 +80,12 @@ border-style: inherit;
 }
 .input-section .info-text{
   display:flex;
-  background-color: #0a010c;
   justify-content:center;
   border-radius: 9px;
 }
 .input-section .info-text.error{
   display:flexbox;
+  background-color: #8ec9f3;
   padding: 10px 5px;
   color:#2494e4;
   justify-content: center;
