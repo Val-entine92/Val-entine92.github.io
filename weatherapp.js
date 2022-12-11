@@ -8,16 +8,16 @@ const weatherInfo=document.querySelector(".weather-section");
 const backButton=container.querySelector(".back");
 
 setInterval(//runs the function at at interval of 1 second
-function getcurrentTime(){//function to obtain time ,day, date info and put into HTMl
+function getCurrentTime(){//function to obtain time ,day, date info and put into HTMl
 let currentTimeDate = new Date();
 var weekday = new Array(7);
-        weekday[0] = "Sun";
-        weekday[1] = "Mon";
-        weekday[2] = "Tue";
-        weekday[3] = "Wed";
-        weekday[4] = "Thu";
-        weekday[5] = "Fri";
-        weekday[6] = "Sat";
+        weekday[0] = "Mon";
+        weekday[1] = "Tue";
+        weekday[2] = "Wed";
+        weekday[3] = "Thu";
+        weekday[4] = "Fri";
+        weekday[5] = "Sat";
+        weekday[6] = "Sun"
 var month = new Array();
         month[0] = "Jan";
         month[1] = "Feb";
@@ -32,11 +32,11 @@ var month = new Array();
         month[10] = "Nov";
         month[11] = "Dec";
     
-var currentDay = weekday[currentTimeDate.getDay()];
-var currentDate  = currentTimeDate.getDate();
-var currentMonth = month[currentTimeDate.getMonth()];
-var currentYear = currentTimeDate.getFullYear();
-var fullDate = ` ${currentDay} ${currentDate} ${currentMonth}, ${CurrentYear}`;
+let currentDay = weekday[currentTimeDate.getDay()];
+let currentDate  = currentTimeDate.getDate();
+let currentMonth = month[currentTimeDate.getMonth()];
+let currentYear = currentTimeDate.getFullYear();
+let fullDate = ` ${currentDay} ${currentDate} ${currentMonth}, ${CurrentYear}`;
 $(".time").innerHTML =`[${fullDate} ] `  + currentTimeDate.toLocaleTimeString();
 });
 
