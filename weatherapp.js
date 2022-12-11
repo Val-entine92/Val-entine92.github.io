@@ -10,27 +10,8 @@ const backButton=container.querySelector(".back");
 setInterval(//runs the function at at interval of 1 second
 function getcurrentTime(){//function to obtain time ,day, date info and put into HTMl
 let currentTimeDate = new Date();
-var weekday = new Array();
-    weekday[1] = "Mon";
-    weekday[2] = "Tue";
-    weekday[3] = "Wed";
-    weekday[4] = "Thu";
-    weekday[5] = "Fri";
-    weekday[6] = "Sat";
-    weekday[7] = "Sun";
-var month = new Array();
-    month[1] = "Jan";
-    month[2] = "Feb";
-    month[3] = "Mar";
-    month[4] = "Apr";
-    month[5] = "May";
-    month[6] = "Jun";
-    month[7] = "Jul";
-    month[8] = "Aug";
-    month[9] = "Sep";
-    month[10] = "Oct";
-    month[11] = "Nov";
-    month[12] = "Dec";
+var weekday = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     
 var currentDay = weekday[currentTimeDate.getDay()];
 var currentDate  = currentTimeDate.getDate();
