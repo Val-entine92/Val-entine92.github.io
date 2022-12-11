@@ -32,9 +32,9 @@ var month = new Array();
         month[10] = "Nov";
         month[11] = "Dec";
     
-var currentDay = currentTimeDate.getDay();
+var currentDay = weekday[currentTimeDate.getDay()];
 var currentDate  = currentTimeDate.getDate();
-var currentMonth = currentTimeDate.getMonth()];
+var currentMonth = month[currentTimeDate.getMonth()];
 var currentYear = currentTimeDate.getFullYear();
 var fullDate = ` ${currentDay} ${currentDate} ${currentMonth}, ${CurrentYear}`;
 $(".time").innerHTML =`[${fullDate} ] `  + currentTimeDate.toLocaleTimeString();
