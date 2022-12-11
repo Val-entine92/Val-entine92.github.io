@@ -30,7 +30,7 @@ window.addEventListener("load",()=>{//upon loading , function will run to provid
     function weatherDet(wData){
         if (wData.cod==200){
             let temp = wData.main.temp*(9/5) + 32;
-            $(".temperature").innerHTML = Math.ceil(temp);
+            $(".temperature").innerHTML = Math.floor(temp);
         }else{
             $(".temperature").innerHTML="N/A";
         }
