@@ -10,8 +10,27 @@ const backButton=container.querySelector(".back");
 setInterval(//runs the function at at interval of 1 second
 function getcurrentTime(){//function to obtain time ,day, date info and put into HTMl
 let currentTimeDate = new Date();
-var weekday = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var weekday = new Array(7);
+        weekday[0] = "Sun";
+        weekday[1] = "Mon";
+        weekday[2] = "Tue";
+        weekday[3] = "Wed";
+        weekday[4] = "Thu";
+        weekday[5] = "Fri";
+        weekday[6] = "Sat";
+var month = new Array();
+        month[0] = "Jan";
+        month[1] = "Feb";
+        month[2] = "Mar";
+        month[3] = "Apr";
+        month[4] = "May";
+        month[5] = "Jun";
+        month[6] = "Jul";
+        month[7] = "Aug";
+        month[8] = "Sep";
+        month[9] = "Oct";
+        month[10] = "Nov";
+        month[11] = "Dec";
     
 var currentDay = weekday[currentTimeDate.getDay()];
 var currentDate  = currentTimeDate.getDate();
@@ -24,7 +43,7 @@ $(".time").innerHTML =`[${fullDate} ] `  + currentTimeDate.toLocaleTimeString();
 let api_url;
 
 window.addEventListener("load",()=>{//upon loading , function will run to provide current temperature of base city (Caldwell)
-    api_url=(`https://api.openweathermap.org/data/2.5/weather?q=EssexFells&units=metric&appid=0461ab343c61a04b435c6ed2fc6d01b9`);
+    api_url=(`https://api.openweathermap.org/data/2.5/weather?q=Caldwell&units=metric&appid=0461ab343c61a04b435c6ed2fc6d01b9`);
     fetch(api_url).
     then(res => res.json())
    .then(wData=> (weatherDet(wData)));
