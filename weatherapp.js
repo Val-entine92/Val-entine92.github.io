@@ -12,6 +12,7 @@ function getCurrentTime(){//function to obtain time ,day, date info and put into
 let currentTimeDate = new Date();
 var day= ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 var month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
 let currentDay = day[currentTimeDate.getDay()];
 let currentDate  = currentTimeDate.getDate();
 let currentMonth = month[currentTimeDate.getMonth()];
@@ -28,9 +29,12 @@ window.addEventListener("load",()=>{//upon loading , function will run to provid
     then(res => res.json()) .then(wData=> (weatherDet(wData)));
     function weatherDet(wData){
         if (wData.cod==200){
-        let temp = wData.main.temp*(9/5) + 32;
-        $(".temperature").innerHTML = Math.ceil(temp);
-           }}
+            let temp = wData.main.temp*(9/5) + 32;
+            $(".temperature").innerHTML = Math.ceil(temp);
+        }else{
+            $(".temperature").innerHTML="N/A";
+        }
+    }
 })
 
 //if inputfield is available, upon entering a string and hittinng Enter , requestApi() runs
@@ -38,12 +42,11 @@ inputField.addEventListener("keydown", k =>{
         if(k.key == "Enter" && inputField.value != ""){
             requestApi(inputField.value)  
         }
+        function requestApi(){//used to fetch api info using the inputfield value
+            api_url=(`https://api.openweathermap.org/data/2.5/weather?q=${inputField.value}&units=metric&appid=0461ab343c61a04b435c6ed2fc6d01b9`);
+            fetchInfo();
+        } 
     });
-
-function requestApi(){//used to fetch api info using the inputfield value
-    api_url=(`https://api.openweathermap.org/data/2.5/weather?q=${inputField.value}&units=metric&appid=0461ab343c61a04b435c6ed2fc6d01b9`);
-    fetchInfo();
-} 
 
 function getLocation(){//upon clicking the button,user is prompted to share their geoloaction or otherwise 
     if(navigator.geolocation){
@@ -65,9 +68,9 @@ function getLocation(){//upon clicking the button,user is prompted to share thei
 function fetchInfo(){//function to gain API info
     infoText.classList.add("pending");
     $(".pending").innerHTML="Obtaining info...";
-    fetch(api_url).
-    then(res => res.json())
-    .then(wInfo=> (weatherDetails(wInfo)))//Api info converted to JSON is given the object ,wInfo
+    fetch(api_url)
+    .then(res => res.json())
+    .then(wInfo=> (weatherDetails(wInfo)))// info converted to JSON and given the object name ,wInfo
         function weatherDetails(wInfo){//putting thenobtained info into the HTML 
             console.log(wInfo)
             if (wInfo.cod===200){
@@ -85,13 +88,12 @@ function fetchInfo(){//function to gain API info
                 $(".humidity").innerHTML = `${humidity}%`;
 
                 let id = wInfo.weather[0].id;
-                function changeImage(url){//style backgrounds 
+                function changeImage(url){//style backgrounds depending on id range 
                     backgroundImage.style.background="url('"+url+"')";
                     backgroundImage.style.backgroundRepeat="no-repeat";
                     backgroundImage.style.backgroundSize="cover";
                     backgroundImage.style.backgroundColor="inherit";  
-                }
-                //each set of ids is accompanied by a different background image 
+                }      
                 if (id>=200&&id<=232){//thunderstorm 
                     changeImage('https://th.bing.com/th/id/R.25a81d3a9fd98b4bc763917ce6a6979a?rik=s5jis36eYsQpIw&pid=ImgRaw&r=0');
                 }else if (id>=300&&id<=321){//drizzle 
