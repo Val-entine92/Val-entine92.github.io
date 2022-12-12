@@ -104,7 +104,7 @@ function fetchInfo(){//function to gain API info
                     changeImage('https://th.bing.com/th/id/R.48e6824e5ff37b0ba8ad52e2b40ae3ab?rik=oQqQ30mlhDP61g&pid=ImgRaw&r=0');
                 }if (id>=700&&id<=781){//atmosphere.ie.mist, smoke, haze, winds, etc
                     changeImage(' https://th.bing.com/th/id/R.d8a466b8f779ddbb17b0852c20b616dd?rik=oAep%2fAWOahOC8g&pid=ImgRaw&r=0');
-                $(".weather-section").style.color="white";
+                $(".weather-section").style.color="#7db0da;";
                 }else if (id==800){//clear sky
                     changeImage('https://th.bing.com/th/id/R.c5e078e3c50284dd2b23396a4749bed7?rik=rwcTZRM3npqLww&pid=ImgRaw&r=0');
                 }if (id>=801&&id<=804){//clouds
