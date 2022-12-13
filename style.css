@@ -3,7 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family:"monospace";
-  font-size:35px; 
+  font-size:1.4rem; 
 }
 .bg-Img{
   display:flex;
@@ -37,8 +37,8 @@ margin-left:-1em;
   padding: 3em 2em;
   position: absolute;
   display: flexbox;
-  width: 600px;
-  height: 700px;
+  width: 40vw;
+  height: 70vh;
   color: #8ec9f3;
   background-color:rgba(8, 2, 59, 0.226);
   border-radius: 10px;
@@ -48,7 +48,7 @@ margin-left:-1em;
 }
 .container header{
   display: flex;
-  font-size: 36px;
+  font-size: 1.2em;
   color:#5DBBFF;
   justify-content: center;
   border-bottom: 3px solid rgb(9, 37, 78);
@@ -80,7 +80,7 @@ border-style: inherit;
 .input-section .info-text{
   display:flex;
   justify-content:center;
-  border-radius: 9px;
+  border-radius: 0.9px;
 }
 .input-section .info-text.error{
   display:flexbox;
@@ -103,12 +103,12 @@ input:focus{
   height: 43px;
   border: 4px solid rgb(46, 130, 179);
   outline:auto;
-  border-radius: 16px;
+  border-radius: 1.6rem;
 }
 .input-section input{
   background-color:inherit ;
   text-align: center;
-  padding: 0px 0px;
+  padding: 0em 0em;
 }
 input:hover{
 transition: 0.3s ease-out;
