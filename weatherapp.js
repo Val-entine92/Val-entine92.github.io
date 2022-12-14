@@ -92,7 +92,7 @@ function fetchInfo(){//function to gain API info
                     backgroundImage.style.background="url('"+url+"')";
                     backgroundImage.style.backgroundRepeat="no-repeat";
                     backgroundImage.style.backgroundSize="cover";
-                    backgroundImage.style.backgroundColor="inherit";  
+                    backgroundImage.style.backgroundColor="";  
                 }      
                 if (id>=200&&id<=232){//thunderstorm 
                     changeImage('https://th.bing.com/th/id/R.25a81d3a9fd98b4bc763917ce6a6979a?rik=s5jis36eYsQpIw&pid=ImgRaw&r=0');
