@@ -16,11 +16,9 @@
   transition:3s ease-in-out;
   background-repeat:repeat;
   background-size:cover;
-  background-color:lightskyblue;
- 
 }
 ::selection{
-background: rgb(153, 98, 241);
+background: rgb(168, 131, 228);
 }
 .city {
 position: fixed;
@@ -50,8 +48,9 @@ margin-left:-1em;
   display: flex;
   font-size: 1.2em;
   color:#5DBBFF;
-  justify-content: center;
+  justify-content:space-around;
   border-bottom: 3px solid rgb(9, 37, 78);
+  margin-bottom: 10%;
 }
 .container.active header {
   display: flexbox;
@@ -87,13 +86,13 @@ border-style: inherit;
   background-color: #8ec9f3;
   padding: 10px 5px;
   color:#2494e4;
-  justify-content: center;
+ 
 }
 .input-section .info-text.pending{
   display:block;
   background: #0a010c;
   color:#5DBBFF;
-  border: 1px solid #635261;
+  border-radius: 1ex;
 }
 input:focus{
   color: #b6d3e7;
@@ -125,7 +124,7 @@ color:#5DBBFF;
   content: "OR";
   color:#abd4f1;
   font: 30px bolder;
-  padding: 20px 0 ;
+  padding: 2em 0 ;
 }
 .input-section button{
   color:#5DBBFF;
@@ -140,10 +139,8 @@ color:#5DBBFF;
   
 .container .weather-section{
   display: none;
-  margin: 30px 0 0;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 .container.active .weather-section{
   color:#8ec9f3;
@@ -163,12 +160,11 @@ color:#5DBBFF;
   font-size: 66px;
 }
 .number{
-  margin:26px;
+  margin:24px;
 }
 .weather-section .weather{
   text-transform: capitalize;
   font-size: 25px;
-  text-align: center;
   margin: -5px 10px 15px;
 }
 .weather-section .location{
@@ -177,15 +173,9 @@ color:#5DBBFF;
   padding: 0 20px;
   text-align: center;
   margin-bottom: 30px;
-  align-items: flex-start;
-}
-.location i{
- text-align: center;
- margin:0 auto;
 }
 .bottom-details{
   display: flexbox;
-  justify-content: space-between;
   border-top: 3px solid rgb(9, 37, 78);
 }
 .humidity {
@@ -196,12 +186,11 @@ color:#5DBBFF;
   margin: 7px ;
   font-size: 41px;
   text-align:center;
-  justify-content: center;
 }
 
 .feels  {
 margin-left: 0px auto;
-display: inline-flexbox;
+display: flexbox;
 }
 .footinfo{
 display:flex;
