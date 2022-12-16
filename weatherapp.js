@@ -90,9 +90,9 @@ function fetchInfo(){//function to gain API info
             let id = wInfo.weather[0].id;
                 function changeImage(url){//style backgrounds depending on id range 
                     backgroundImage.style.background="url('"+url+"')";
-                    backgroundImage.style.backgroundRepeat="no-repeat";
+                    backgroundImage.style.backgroundRepeat="repeat";
                     backgroundImage.style.backgroundSize="cover";
-                    backgroundImage.style.backgroundColor="";  
+                    backgroundImage.style.backgroundColor=""; 
                 }      
                 if (id>=200&&id<=232){//thunderstorm 
                     changeImage('https://th.bing.com/th/id/R.25a81d3a9fd98b4bc763917ce6a6979a?rik=s5jis36eYsQpIw&pid=ImgRaw&r=0');
@@ -101,7 +101,8 @@ function fetchInfo(){//function to gain API info
                 }else if (id>=500&&id<=531){//rain
                     changeImage('https://th.bing.com/th/id/R.258e88c6cb21ea8099f08ec2ce2cf999?rik=%2fCfwqAwXw7rkzg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fb%2fa%2f1%2f944162-raining-wallpaper-1920x1080-for-mac.jpg&ehk=5qd%2fAlfsY325l%2fRwlBZ7ro5%2fkM%2f92%2bnZL%2fIBcSzduXY%3d&risl=&pid=ImgRaw&r=0')
                 }else if (id>=600&&id<=622){//snow
-                    changeImage('https://th.bing.com/th/id/R.48e6824e5ff37b0ba8ad52e2b40ae3ab?rik=oQqQ30mlhDP61g&pid=ImgRaw&r=0');
+                    changeImage('https://th.bing.com/th/id/R.48e6824e5ff37b0ba8ad52e2b40ae3ab?rik=oQqQ30mlhDP61g&pid=ImgRaw&r=0',green);
+                    
                 }else if (id>=700&&id<=781){//atmosphere.ie.mist, smoke, haze, winds, etc
                     changeImage(' https://th.bing.com/th/id/R.d8a466b8f779ddbb17b0852c20b616dd?rik=oAep%2fAWOahOC8g&pid=ImgRaw&r=0');
                     $(".weather-section").style.color="#7db0da;";

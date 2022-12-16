@@ -16,6 +16,7 @@
   transition:3s ease-in-out;
   background-repeat:repeat;
   background-size:cover;
+  background-color: #f58020da;
 }
 ::selection{
 background: rgb(168, 131, 228);
