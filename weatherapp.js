@@ -93,24 +93,41 @@ function fetchInfo(){//function to gain API info
                     backgroundImage.style.backgroundRepeat="repeat";
                     backgroundImage.style.backgroundSize="cover";
                     backgroundImage.style.backgroundColor="lightsteelblue"; 
-                }      
-                if (id>=200&&id<=232){//thunderstorm 
-                    changeImage('https://th.bing.com/th/id/R.25a81d3a9fd98b4bc763917ce6a6979a?rik=s5jis36eYsQpIw&pid=ImgRaw&r=0');
-                }else if (id>=300&&id<=321){//drizzle 
-                    changeImage('https://th.bing.com/th/id/R.6c9680a5a515d2b459e44911babdb3cd?rik=%2bbMmOXw%2f%2fZl8tQ&pid=ImgRaw&r=0');
-                }else if (id>=500&&id<=531){//rain
-                    changeImage('https://th.bing.com/th/id/R.258e88c6cb21ea8099f08ec2ce2cf999?rik=%2fCfwqAwXw7rkzg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fb%2fa%2f1%2f944162-raining-wallpaper-1920x1080-for-mac.jpg&ehk=5qd%2fAlfsY325l%2fRwlBZ7ro5%2fkM%2f92%2bnZL%2fIBcSzduXY%3d&risl=&pid=ImgRaw&r=0')
-                }else if (id>=600&&id<=622){//snow
-                    changeImage('https://th.bing.com/th/id/R.48e6824e5ff37b0ba8ad52e2b40ae3ab?rik=oQqQ30mlhDP61g&pid=ImgRaw&r=0');
-                }else if (id>=700&&id<=781){//atmosphere.ie.mist, smoke, haze, winds, etc
-                    changeImage(' https://th.bing.com/th/id/R.d8a466b8f779ddbb17b0852c20b616dd?rik=oAep%2fAWOahOC8g&pid=ImgRaw&r=0');
-                }else if (id==800){//clear sky
-                    changeImage('https://th.bing.com/th/id/R.c5e078e3c50284dd2b23396a4749bed7?rik=rwcTZRM3npqLww&pid=ImgRaw&r=0');
-                }else if (id>=801&&id<=804){//clouds /// to make this shorter , use "else{function inside}"
-                    changeImage('https://i.pinimg.com/originals/fc/fd/b7/fcfdb71f4bb464b00fc7e5fd3b51be6a.jpg');
-                }
+                }   
+                switch(true){
+
+                    case id>=200 && id<=232 :{//thunderstorm 
+                        changeImage('https://th.bing.com/th/id/R.25a81d3a9fd98b4bc763917ce6a6979a?rik=s5jis36eYsQpIw&pid=ImgRaw&r=0');
+                        break;
+                    }
+                    case id>=300 && id<=321:{//drizzle 
+                        changeImage('https://th.bing.com/th/id/R.6c9680a5a515d2b459e44911babdb3cd?rik=%2bbMmOXw%2f%2fZl8tQ&pid=ImgRaw&r=0');
+                        break;
+                    }
+                    case id>=500 && id<=531:{//rain
+                        changeImage('https://th.bing.com/th/id/R.258e88c6cb21ea8099f08ec2ce2cf999?rik=%2fCfwqAwXw7rkzg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fb%2fa%2f1%2f944162-raining-wallpaper-1920x1080-for-mac.jpg&ehk=5qd%2fAlfsY325l%2fRwlBZ7ro5%2fkM%2f92%2bnZL%2fIBcSzduXY%3d&risl=&pid=ImgRaw&r=0');
+                        break;
+                    }
+                    case id>=600 && id<=622:{//snow
+                        changeImage('https://th.bing.com/th/id/R.48e6824e5ff37b0ba8ad52e2b40ae3ab?rik=oQqQ30mlhDP61g&pid=ImgRaw&r=0');
+                        break;
+                    }
+                    case id>=700 && id<=781:{//atmosphere.ie.mist, smoke, haze, winds, etc
+                        changeImage(' https://th.bing.com/th/id/R.d8a466b8f779ddbb17b0852c20b616dd?rik=oAep%2fAWOahOC8g&pid=ImgRaw&r=0');
+                        break;
+                    }
+                    case id==800:{//clear sky
+                        changeImage('https://th.bing.com/th/id/R.c5e078e3c50284dd2b23396a4749bed7?rik=rwcTZRM3npqLww&pid=ImgRaw&r=0');
+                        break;
+                    }
+                    case id>=801 && id<=804:{//clouds /// to make this shorter , use "else{function inside}"
+                        changeImage('https://i.pinimg.com/originals/fc/fd/b7/fcfdb71f4bb464b00fc7e5fd3b51be6a.jpg');
+                        break;
+                    }
+                    
+                }   
             }
-            else if (wInfo.cod==404){//code for an invalid input
+            if (wInfo.cod==404){//code for an invalid input
                 infoText.classList.add("error");
                 infoText.innerHTML = `${inputField.value} isn't a valid location`;
             }
