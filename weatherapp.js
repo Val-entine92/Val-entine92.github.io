@@ -24,11 +24,11 @@ function getCurrentTime(){//function to obtain time ,day, date info and put into
 let api_url;
 
 window.addEventListener("load",()=>{//upon loading , function will run to provide current temperature of base city (Caldwell)
-    api_url=(`https://api.openweathermap.org/data/2.5/weather?q=Caldwell&units=metric&appid=0461ab343c61a04b435c6ed2fc6d01b9`);
+    api_url=(`https://api.openweathermap.org/data/2.5/weather?q=Accra&units=metric&appid=0461ab343c61a04b435c6ed2fc6d01b9`);
     fetch(api_url).
     then(res => res.json()) .then(wData=> (weatherDet(wData)));
     function weatherDet(wData){
-        if (wData.cod===200){
+        if (wData.cod==200){
             let temp = wData.main.temp*(9/5) + 32;
             $(".temperature").innerHTML = Math.floor(temp);
         }else{
