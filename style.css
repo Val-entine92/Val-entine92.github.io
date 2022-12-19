@@ -12,11 +12,11 @@
   justify-content: center;
   min-height:100vh;
   color: rgb(4, 191, 248);
-  background-image:url(https://media.istockphoto.com/photos/sun-beams-through-clouds-picture-id471892237?k=6&m=471892237&s=612x612&w=0&h=x1DU0nR3-JV3lg1dnyrwzpkoeozFV5Kk5yvsBziT9L0=);
+  background-image:url(https://th.bing.com/th/id/R.84b3491704c37a58b766177f230f4666?rik=6tiApPxzP1Tu7w&pid=ImgRaw&r=0);
   transition:3s ease-in-out;
   background-repeat:repeat;
   background-size:cover;
-  background-color: #f58020da;
+  background-color: #f27cf7da;
 }
 ::selection{
 background: rgb(168, 131, 228);
@@ -78,7 +78,7 @@ display: block;
 margin:0;
 width: 3rem;
 height:3rem;
-background:#5DBBFF ;
+background:inherit;
 border-radius: 1.625rem;
 }
 .container.active .back .arrow-icon{
@@ -99,8 +99,8 @@ border-radius: 1.625rem;
   right: -6.3625rem;
   width:0.625rem;
   height:0.625rem;
-  border-top:0.125rem solid rgb(15, 13, 13);
-  border-left: 0.125rem solid rgb(19, 15, 15);
+  border-top:0.225rem solid rgb(15, 13, 13);
+  border-left: 0.225rem solid rgb(19, 15, 15);
   transform: rotate(-45deg);
 }
 .container.active .back .button-text{
@@ -114,9 +114,13 @@ border-radius: 1.625rem;
   transition: all 0.45s cubic-bezier(0.065, 0, 0.65, 1);
   font-size: 1rem;
   text-transform:capitalize;
+  visibility: hidden;
 }
 .container.active .back:hover .circle{
   width: 100%;
+}
+.container.active .back:hover .button-text{
+ visibility:visible;
 }
 .container.active .back:hover .arrow-icon{
   transform: translate(-6rem,0);
@@ -302,7 +306,9 @@ color:#2494e4;
 justify-content:center;
 font:25px bolder;
 }
-
+.container.active .back .button-text{
+  visibility:visible;
+}
 }
 
 @media only screen and (max-width:490px){
@@ -360,5 +366,7 @@ align-content: center;
 .footinfo{
 display:none;
 }
-
+.container.active .back .button-text{
+  visibility:visible;
+}
 }
