@@ -49,7 +49,7 @@ margin-left:-1em;
   display: flex;
   font-size: 1.2em;
   color:#5DBBFF;
-  justify-content:space-around;
+  justify-content:center;
   border-bottom: 3px solid rgb(9, 37, 78);
   margin-bottom: 10%;
 }
@@ -61,15 +61,67 @@ margin-left:-1em;
   display: none;
 }
 .container.active .back {
-  color:#5DBBFF;
-  display:flex;
-  border-radius: 20%;
+  display:inline-block;
+  border-radius: 1.625rem;
+  cursor:pointer;
   background-color:inherit;
-  height:fit-content;
-  width:fit-content;
+  height:auto;
+  width:8rem;
+  position: relative;
+  outline: none;
 }
-.container.active .back:hover{
-border-style: inherit;
+
+.container.active .back .circle{
+transition: all 0.45s cubic-bezier(0.065, 0, 0.65, 1);
+position: relative;
+display: block;
+margin:0;
+width: 3rem;
+height:3rem;
+background: #3eabeb;
+border-radius: 1.625rem;
+}
+.container.active .back .arrow-icon{
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #2494e4;
+  transition: all 0.45s cubic-bezier(0.065, 0, 0.65, 1);
+  left: 0.0625rem;
+  width:1.125rem;
+  height:0.125rem;
+  background: none;
+}
+.container.active .back .arrow-icon::before{
+  position:absolute;
+  content: "";
+  top:-0.25rem;
+  left: 0.1625rem;
+  width:0.625rem;
+  height:0.625rem;
+  border-top:0.125rem solid rgb(15, 13, 13);
+  border-left: 0.125rem solid rgb(19, 15, 15);
+  transform: rotate(-45deg);
+}
+.container.active .back .button-text{
+  position:absolute;
+  inset:0;
+  color: #020607;
+  padding:0.75rem 0;
+  line-height:1.5;
+  letter-spacing: 1px;
+  margin: 0 0 0 1.85rem ;
+  transition: all 0.45s cubic-bezier(0.065, 0, 0.65, 1);
+  font-size: 1rem;
+  text-transform:capitalize;
+}
+.container.active .back:hover .circle{
+  width: 100%;
+}
+.container.active .back:hover .arrow-icon{
+  transform: translate(1rem,0);
+  background: none;
 }
 .container .input-section{
   margin:0px 25px 25px 25px;
