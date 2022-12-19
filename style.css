@@ -78,7 +78,7 @@ display: block;
 margin:0;
 width: 3rem;
 height:3rem;
-background: #3eabeb;
+background:rgba(7, 2, 54, 0.226) ;
 border-radius: 1.625rem;
 }
 .container.active .back .arrow-icon{
@@ -86,7 +86,6 @@ border-radius: 1.625rem;
   top: 0;
   bottom: 0;
   margin: auto;
-  background: #2494e4;
   transition: all 0.45s cubic-bezier(0.065, 0, 0.65, 1);
   left: 0.0625rem;
   width:1.125rem;
@@ -97,7 +96,7 @@ border-radius: 1.625rem;
   position:absolute;
   content: "";
   top:-0.25rem;
-  left: 0.1625rem;
+  right: -6.3625rem;
   width:0.625rem;
   height:0.625rem;
   border-top:0.125rem solid rgb(15, 13, 13);
@@ -107,9 +106,9 @@ border-radius: 1.625rem;
 .container.active .back .button-text{
   position:absolute;
   inset:0;
-  color: #020607;
+  color:#5DBBFF;
   padding:0.75rem 0;
-  line-height:1.5;
+  line-height:1.7em;;
   letter-spacing: 1px;
   margin: 0 0 0 1.85rem ;
   transition: all 0.45s cubic-bezier(0.065, 0, 0.65, 1);
@@ -120,7 +119,7 @@ border-radius: 1.625rem;
   width: 100%;
 }
 .container.active .back:hover .arrow-icon{
-  transform: translate(1rem,0);
+  transform: translate(-6rem,0);
   background: none;
 }
 .container .input-section{
