@@ -21,6 +21,7 @@
 ::selection{
 background: rgb(168, 131, 228);
 }
+
 .city {
 position: fixed;
 bottom: 0% ;
@@ -30,7 +31,6 @@ text-align:  center;
 color:#b6d3e7;
 font-size: 0.7em;
 margin-left:-1em;
-
 }
 .container{
   padding: 3em 2em;
