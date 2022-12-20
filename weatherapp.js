@@ -117,7 +117,7 @@ function fetchInfo(){//function to gain API info
           
                 }   
             }
-            if (wInfo.cod==404){//code for an invalid input
+            if (wInfo.cod==404){//error handling for an invalid input
                 infoText.classList.add("error");
                 infoText.innerHTML = `${inputField.value} isn't a valid location`;
             }
