@@ -39,7 +39,7 @@ window.addEventListener("load",()=>{//upon loading , function will run to provid
 //if inputfield is available, upon entering a string and hittinng Enter , requestApi() runs
 inputField.addEventListener("keydown", k =>{
         if(k.key === "Enter" && inputField.value !== ""){//!== for strictly not equal to 
-            requestApi(inputField.value)  
+            requestApi(inputField.value)
             function requestApi(){//used to fetch api info using the inputfield value
                 api_url=(`https://api.openweathermap.org/data/2.5/weather?q=${inputField.value}&units=metric&appid=0461ab343c61a04b435c6ed2fc6d01b9`);
                 fetchInfo();
