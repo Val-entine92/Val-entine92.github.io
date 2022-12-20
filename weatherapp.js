@@ -5,7 +5,6 @@ const container= document.querySelector(".container");
 const infoText = document.querySelector(".info-text");
 const inputField= document.querySelector("input");
 const weatherInfo=document.querySelector(".weather-section");
-const backButton=container.querySelector(".back");
 
 setInterval(//runs the function at at interval of 1 second
 function getCurrentTime(){//function to obtain time ,day, date info and put into HTMl
@@ -123,11 +122,11 @@ function fetchInfo(){//function to gain API info
             }
         }
     }
-backButton.addEventListener("click",()=>{
+function goBack(){
         container.classList.remove("active" );
         infoText.classList.remove("error","pending");
         infoText.innerHTML="";
-    })
+    }
     
         
 
