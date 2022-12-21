@@ -111,6 +111,7 @@ function fetchInfo(){//function to gain API info
                         break;
                     case id>=700 && id<=781://atmosphere.ie.mist, smoke, haze, winds, etc
                         changeImage(' https://th.bing.com/th/id/R.d8a466b8f779ddbb17b0852c20b616dd?rik=oAep%2fAWOahOC8g&pid=ImgRaw&r=0');
+                        weatherInfo.style.color="black";
                         break;
                     case id==800://clear sky
                         changeImage('https://th.bing.com/th/id/R.c5e078e3c50284dd2b23396a4749bed7?rik=rwcTZRM3npqLww&pid=ImgRaw&r=0');

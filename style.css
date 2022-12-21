@@ -3,7 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family:monospace,sans-serif;
-  font-size:1.3rem; 
+  font-size:1.4rem; 
 }
 .bg-Img{
   display:flex;
@@ -29,7 +29,7 @@ width:100%;
 display:flexbox;
 text-align:  center;
 color:#b6d3e7;
-font-size: 0.7em;
+font-size: 0.5em;
 margin-left:-1em;
 }
 .container{
@@ -166,7 +166,8 @@ input:focus{
 .input-section input{
   background-color:inherit ;
   text-align: center;
-  padding: 0em 0em;
+  padding: 0em 0.1em;
+  
 }
 input:hover{
 transition: 0.3s ease-out;
@@ -213,6 +214,7 @@ color:#5DBBFF;
 .weather-section{
   display: none;
   width:100%;
+  
 }
 .weather-section .temperature{
   display: flex;
