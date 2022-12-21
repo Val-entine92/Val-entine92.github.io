@@ -140,9 +140,11 @@ margin-left:-1em;
 }
 .input-section .info-text.error{
   display:flexbox;
-  background-color: #8ec9f3;
-  padding: 10px 5px;
-  color:#2494e4;
+  background-color:#0e0211;
+  padding: 1px 5px;
+  color:#5DBBFF;
+  text-align: center;
+  border-radius: 10px;
  
 }
 .input-section .info-text.pending{

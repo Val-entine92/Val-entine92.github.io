@@ -24,7 +24,10 @@ let api_url;//allows variable 'api_url' to be block-scoped
 
 window.addEventListener("load",()=>{//upon loading , function will run to provide current temperature of base city (Accra, Ghana)
     api_url=(`https://api.openweathermap.org/data/2.5/weather?q=Accra&units=metric&appid=0461ab343c61a04b435c6ed2fc6d01b9`);
-    fetch(api_url).then(res => res.json()) .then(wData=> (weatherDet(wData)));
+    fetch(api_url)
+    .then(function(res){
+        return res.json();
+    }) .then(weatherDet);
     function weatherDet(wData){
         if (wData.cod==200){
             let temp = wData.main.temp*(9/5) + 32;
@@ -66,7 +69,9 @@ function getLocation(){//upon clicking the button,user is prompted to share thei
 function fetchInfo(){//function to gain API info
     infoText.classList.add("pending");
     $(".pending").innerHTML="Obtaining info...";
-    fetch(api_url).then(res => res.json()).then(wInfo=> (weatherDetails(wInfo)))// info converted to JSON and given the object name ,wInfo
+    fetch(api_url)
+    .then(res => res.json())
+    .then(wInfo=> (weatherDetails(wInfo)))// info converted to JSON and given the object name ,wInfo
         function weatherDetails(wInfo){//putting thenobtained info into the HTML 
             console.log(wInfo)
             if (wInfo.cod===200){//=== for strictly equal to 
@@ -117,7 +122,7 @@ function fetchInfo(){//function to gain API info
                 }   
             }
             if (wInfo.cod==404){//error handling for an invalid input
-                infoText.classList.add("error");
+                infoText.classList.replace("pending","error");
                 infoText.innerHTML = `${inputField.value} isn't a valid location`;
             }
         }
