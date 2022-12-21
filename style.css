@@ -40,7 +40,7 @@ margin-left:-1em;
   height: 70vh;
   color: #8ec9f3;
   background-color:rgba(8, 2, 59, 0.226);
-  border-radius: 10px;
+  border-radius: 15%;
   box-shadow: 27px 20px 20px rgba(12, 11, 11, 0.05);
   align-content: center;
  
@@ -64,24 +64,28 @@ margin-left:-1em;
   display:inline-block;
   border-radius: 1.625rem;
   cursor:pointer;
+  border-color: #55b7f0;
   background-color:inherit;
   height:auto;
   width:8rem;
   position: relative;
-  outline: none;
+  outline:inherit;
 }
 
-.container.active .back .circle{
-transition: all 0.45s cubic-bezier(0.065, 0, 0.65, 1);
-position: relative;
-display: block;
-margin:0;
-width: 3rem;
-height:3rem;
-background:inherit;
-border-radius: 1.625rem;
+.back .circle{
+  transition: all 0.45s cubic-bezier(0.065, 0, 0.65, 1);
+  position: relative;
+  display: block;
+  margin:0;
+  width: 3rem;
+  height:3rem;
+  background-color:inherit;
+  border-radius: 1.625rem;
 }
-.container.active .back .arrow-icon{
+.back:hover .circle{
+  width: 100%;
+}
+.back .arrow-icon{
   position:absolute;
   top: 0;
   bottom: 0;
@@ -92,18 +96,22 @@ border-radius: 1.625rem;
   height:0.125rem;
   background: none;
 }
-.container.active .back .arrow-icon::before{
+.back .arrow-icon::before{
   position:absolute;
   content: "";
   top:-0.25rem;
   right: -6.3625rem;
   width:0.625rem;
   height:0.625rem;
-  border-top:0.225rem solid rgb(15, 13, 13);
-  border-left: 0.225rem solid rgb(19, 15, 15);
+  border-top:0.225rem solid #55b7f0;
+  border-left: 0.225rem solid #55b7f0;
   transform: rotate(-45deg);
 }
-.container.active .back .button-text{
+.back:hover .arrow-icon{
+  transform: translate(-6rem,0);
+  background: none;
+}
+.back .button-text{
   position:absolute;
   inset:0;
   color:#5DBBFF;
@@ -116,15 +124,8 @@ border-radius: 1.625rem;
   text-transform:capitalize;
   visibility: hidden;
 }
-.container.active .back:hover .circle{
-  width: 100%;
-}
-.container.active .back:hover .button-text{
+.back:hover .button-text{
  visibility:visible;
-}
-.container.active .back:hover .arrow-icon{
-  transform: translate(-6rem,0);
-  background: none;
 }
 .container .input-section{
   margin:0px 25px 25px 25px;
@@ -132,7 +133,7 @@ border-radius: 1.625rem;
 .container.active .input-section{
   display: none;
 }
-.input-section .info-text{
+.info-text{
   display:flex;
   justify-content:center;
   border-radius: 0.9px;
@@ -157,7 +158,7 @@ input:focus{
   width: 100%;
   height: 43px;
   border: 4px solid rgb(46, 130, 179);
-  outline:auto;
+  outline:none;
   border-radius: 1.6rem;
 }
 .input-section input{
