@@ -2,8 +2,8 @@
   margin: 1px 1px;
   padding: 0px;
   box-sizing: border-box;
-  font-family:"monospace";
-  font-size:1.4rem; 
+  font-family:monospace,sans-serif;
+  font-size:1.3rem; 
 }
 .bg-Img{
   display:flex;
@@ -39,8 +39,8 @@ margin-left:-1em;
   width: 40vw;
   height: 70vh;
   color: #8ec9f3;
-  background-color:rgba(8, 2, 59, 0.226);
-  border-radius: 15%;
+  background-color:rgba(7, 2, 58, 0.226);
+  border-radius: 10%;
   box-shadow: 27px 20px 20px rgba(12, 11, 11, 0.05);
   align-content: center;
  
@@ -262,6 +262,12 @@ font:20px caption;
 }
 
 @media screen and (max-width:880px){
+  *{
+margin: 0px 0px;
+box-sizing: border-box;
+font-family:monospace;
+font: size 1.2rem;;
+}
 .bg-Img{
 display:flex;
 position:relative;
@@ -271,7 +277,7 @@ justify-content: center;
 .city {
 position:absolute;
 font-size:24px;
-left: 0%;
+left: 4.5%;
 bottom: 0%;
 width:100%; 
 display:flexbox;
@@ -316,7 +322,7 @@ font:25px bolder;
 *{
 margin: 0px 0px;
 box-sizing: border-box;
-font-family:"monospace";
+font-family:monospace;
 font-size:20px;
 }
 .bg-Img{
@@ -341,7 +347,7 @@ bottom: 0%;
 width:100%; 
 display:flexbox;
 text-align: center;
-color:coral;
+color:inherit;
 justify-content:center;
 font-size: 19px;
 margin: auto;
