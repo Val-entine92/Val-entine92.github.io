@@ -129,6 +129,7 @@ function fetchInfo(){//function to gain API info
         }
     }
 function goBack(){
+        weatherInfo.style.color="";
         container.classList.remove("active" );
         infoText.classList.remove("error","pending");
         infoText.innerHTML="";
