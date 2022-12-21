@@ -27,35 +27,56 @@ position: fixed;
 bottom: 0% ;
 width:100%; 
 display:flexbox;
-text-align:  center;
+text-align: center;
 color:#b6d3e7;
-font-size: 0.5em;
 margin-left:-1em;
 }
 .container{
   padding: 3em 2em;
   position: absolute;
   display: flexbox;
-  width: 40vw;
-  height: 70vh;
+  width: 45vw;
+  height: 75vh;
   color: #8ec9f3;
   background-color:rgba(7, 2, 58, 0.226);
   border-radius: 10%;
   box-shadow: 27px 20px 20px rgba(12, 11, 11, 0.05);
   align-content: center;
+ justify-content: center;
  
 }
-.container header{
-  display: flex;
+header{
   font-size: 1.2em;
-  color:#5DBBFF;
-  justify-content:center;
-  border-bottom: 3px solid rgb(9, 37, 78);
+  
+  color:#b6d9f1;
+  display: flex;
   margin-bottom: 10%;
+  border-bottom: 3px solid rgb(9, 37, 78);
+}
+header h2{
+  display: flexbox;
+  font-size:1.4em;
+  position: absolute;
+}
+header h2:nth-child(2){
+  color: #078dec;
+  position: relative;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+  0%,100% {
+clip-path: polygon(0% 48% ,16% 44% ,33% 50% ,54% 60%, 70% 61%, 84% 59%,100% 52%, 100% 100%,0% 100%);
+  }
+  50%{
+clip-path: polygon(8% 54% ,15% 65% ,34% 66% ,51% 62%, 67% 50%, 83% 45%,100% 46%, 100% 100%,0% 100%);
+  }
+  
 }
 .container.active header {
   display: flexbox;
   color:#55b7f0;
+  position: relative;
+ 
 }
 .back {
   display: none;
@@ -164,9 +185,10 @@ input:focus{
   border-radius: 1.6rem;
 }
 .input-section input{
+  display: inline-flex;
   background-color:inherit ;
   text-align: center;
-  padding: 0em 0.1em;
+ justify-content: center;
   
 }
 input:hover{
@@ -177,8 +199,7 @@ background-color: rgba(1, 1, 5, 0.26);
 color:#5DBBFF;
 }
 .separator::before{
-  width: 0%;
-  margin:0 auto;
+  justify-content: center;
   position: relative;
   display: flex;
   content: "OR";
@@ -213,15 +234,13 @@ color:#5DBBFF;
 }
 .weather-section{
   display: none;
-  width:100%;
-  
 }
 .weather-section .temperature{
   display: flex;
   font-size: 66px;
 }
 .number{
-  margin:24px;
+  margin:26px 1px;
 }
 .weather-section .weather{
   text-transform: capitalize;
@@ -250,7 +269,6 @@ color:#5DBBFF;
 }
 
 .feels  {
-margin-left: 0px auto;
 display: flexbox;
 }
 .footinfo{
@@ -265,7 +283,7 @@ justify-content:center;
 font:20px caption;
 }
 
-@media screen and (max-width:880px){
+@media only screen and (max-width:1100px){
   *{
 margin: 0px 0px;
 box-sizing: border-box;
@@ -280,7 +298,7 @@ justify-content: center;
 }
 .city {
 position:absolute;
-font-size:24px;
+font-size:20px;
 left: 4.5%;
 bottom: 0%;
 width:100%; 
