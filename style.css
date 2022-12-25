@@ -112,7 +112,7 @@ clip-path: polygon(0% 54% ,17% 65% ,34% 66% ,51% 62%, 67% 50%, 83% 45%,100% 46%,
   bottom: 0;
   margin: auto;
   transition: all 0.45s cubic-bezier(0.065, 0, 0.65, 1);
-  left: 0.0625rem;
+  left: 6.25rem;
   width:1.125rem;
   height:0.125rem;
   background: none;
@@ -121,12 +121,12 @@ clip-path: polygon(0% 54% ,17% 65% ,34% 66% ,51% 62%, 67% 50%, 83% 45%,100% 46%,
   position:absolute;
   content: "";
   top:-0.25rem;
-  right: -6.3625rem;
   width:0.625rem;
   height:0.625rem;
   border-top:0.225rem solid #55b7f0;
   border-left: 0.225rem solid #55b7f0;
   transform: rotate(-45deg);
+
 }
 .back:hover .arrow-icon{
   transform: translate(-6rem,0);
@@ -206,7 +206,7 @@ input:focus{
 .input-div:is(:hover,:focus) > .search-input{
   width:100%;
   padding:0 8px;
-  transition: 2s ease-out;
+  transition: 1.2s ease-out;
   background-color: inherit;
 }
 .search-input::placeholder{
