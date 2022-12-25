@@ -128,7 +128,7 @@ clip-path: polygon(0% 54% ,17% 65% ,34% 66% ,51% 62%, 67% 50%, 83% 45%,100% 46%,
   transform: rotate(-45deg);
 
 }
-.back:hover .arrow-icon{
+.back:is(:focus,:hover) .arrow-icon{
   transform: translate(-6rem,0);
   background: none;
 }
