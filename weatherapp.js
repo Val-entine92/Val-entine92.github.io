@@ -1,4 +1,5 @@
 'use strict'
+
 const $ = document.querySelector.bind(document)
 const backgroundImage=document.querySelector(".bg-Img")
 const container= document.querySelector(".container");

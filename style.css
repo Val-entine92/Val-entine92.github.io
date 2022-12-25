@@ -174,30 +174,46 @@ clip-path: polygon(0% 54% ,17% 65% ,34% 66% ,51% 62%, 67% 50%, 83% 45%,100% 46%,
   color:#5DBBFF;
   border-radius: 1ex;
 }
-
+.input-div{
+  display: flex;
+  justify-content: center;
+  position:relative;
+  padding: 10px;
+}
+.search-input{
+  outline: none;
+  padding:0;
+  width: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 46px;
+  border: 4px solid rgb(46, 130, 179);
+  line-height: 40px;
+  border-radius: 1.6rem;
+  background-color: rgba(5, 5, 27, 0.26);
+}
 input:focus{
   color: #b6d3e7;
 }
-.input-section :where(input,button){
+.input-section :where(button){
   width: 100%;
   height: 43px;
   border: 4px solid rgb(46, 130, 179);
   outline:none;
   border-radius: 1.6rem;
 }
-.input-section input{
-  display: inline-flex;
-  background-color:inherit ;
-  text-align: center;
- justify-content: center;
-  
+.input-div:is(:hover,:focus) > .search-input{
+  width:100%;
+  padding:0 8px;
+  transition: 2s ease-out;
+  background-color: inherit;
 }
-input:hover{
-transition: 0.3s ease-out;
-background-color: rgba(1, 1, 5, 0.26);
+.search-input::placeholder{
+color: #55b7f0;
 }
-.input-section input::placeholder{
-color:#5DBBFF;
+.input-section .search-input:is(:hover,:focus)::placeholder{
+visibility: visible;
 }
 .separator::before{
   justify-content: center;
