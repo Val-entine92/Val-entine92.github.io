@@ -24,7 +24,7 @@ function getCurrentTime(){//function to obtain time ,day, date info and put into
 let api_url;//allows variable 'api_url' to be block-scoped
 
 window.addEventListener("load", ()=>{//upon loading , function will run to provide current temperature of base city (Accra, Ghana)
-    api_url=(`https://api.openweathermap.org/data/2.5/weather?q=Accra&units=metric&appid=0461ab343c61a04b435c6ed2fc6d01b9`);
+    api_url=(`https://api.openweathermap.org/data/2.5/weather?q=Accra&units=metric&appid=API_KEY`);
     fetch(api_url)
     .then(function (res) {
             return res.json();
@@ -44,7 +44,7 @@ inputField.addEventListener("keydown", k =>{
         if(k.key === "Enter" && inputField.value !== ""){//!== for strictly not equal to 
             requestApi(inputField.value)
             function requestApi(){//used to fetch api info using the inputfield value
-                api_url=(`https://api.openweathermap.org/data/2.5/weather?q=${inputField.value}&units=metric&appid=0461ab343c61a04b435c6ed2fc6d01b9`);
+                api_url=(`https://api.openweathermap.org/data/2.5/weather?q=${inputField.value}&units=metric&appid=API_KEY`);
                 fetchInfo();
             } 
         }
@@ -56,7 +56,7 @@ function getLocation(){//upon clicking the button,user is prompted to share thei
         async function showPosition(position){//successful geolocation
             const {latitude,longitude}= await position.coords; 
             console.log(position);
-            api_url = (`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=0461ab343c61a04b435c6ed2fc6d01b9`);
+            api_url=(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=API_KEY`);
             fetchInfo();  
             }  
         function showError(error){//obvious
