@@ -244,9 +244,7 @@ input:focus{
           to{
             box-shadow:0 0 50px #0b77b6;
 
-          }
-      
-    
+          }   
 }
 .container.active{
   animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
